@@ -39,6 +39,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.Run FastAPI.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/shyrl/Documents/MULTIPLATAFORMA/pythonProject/app/main.py",
     "settings.editor.selected.configurable": "promo.django"
