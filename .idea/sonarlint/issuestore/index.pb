@@ -3,10 +3,6 @@
 .env,3\c\3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
 ;
 app/main.py,6\0\60a964aea4a6760d2f0fe80a7725ed9d569edd6c
->
-app/daabase.py,1\0\1044af23a66345f90525d42aad1cdf133b6a07c3
-?
-app/__init__.py,6\b\6b5a07a517e9a3845a279675e888c81b77b9d712
 R
 "app/controllers/task_controller.py,e\4\e49f8cb1e0303153cf3e14c289624dd64392d77d
 L
@@ -21,11 +17,7 @@ F
 tests/test_services.py,0\d\0dbdb8b9b07a9af2c1b7a5f0e7ca40513784bd04
 J
 tests/test_repositories.py,4\b\4b3704846a8d2dbe228205dae24c58be966f9df2
-F
-app/models/__init__.py,8\9\89985a72863407ec537059cd31903ef25133c043
 ?
 app/database.py,7\6\76944dfe74e520e70194061e6ef0184cbb5c6a78
 7
 test.db,f\9\f969b29ca0626c75276dfa7e222b141095d7f45b
-A
-tests/__init__.py,8\e\8e911f6351f3fa0cd30fc10a701473fbb56707e6
