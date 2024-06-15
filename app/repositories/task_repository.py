@@ -25,6 +25,7 @@ def delete_task(db: Session, task_id: int):
     if task:
         db.delete(task)
         db.commit()
+        return None  # Retorna None após a exclusão
     return task
 
 def list_tasks(db: Session):

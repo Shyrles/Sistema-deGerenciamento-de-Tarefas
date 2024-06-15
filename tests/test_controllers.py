@@ -23,16 +23,24 @@ def test_list_tasks():
     assert isinstance(response.json(), list)
 
 def test_get_task():
+    # Primeiro, crie uma tarefa para garantir que há uma tarefa com ID 1
+    client.post("/tasks/", json={"title": "Test Task", "description": "Test Description", "status": "Pendente"})
     response = client.get("/tasks/1")
     assert response.status_code == 200
     assert response.json()["id"] == 1
 
 def test_update_task():
+    # Primeiro, crie uma tarefa para garantir que há uma tarefa com ID 1
+    client.post("/tasks/", json={"title": "Test Task", "description": "Test Description", "status": "Pendente"})
     response = client.put("/tasks/1", json={"title": "Updated Task", "description": "Updated Description", "status": "Em Progresso"})
     assert response.status_code == 200
     assert response.json()["title"] == "Updated Task"
 
 def test_delete_task():
+    # Primeiro, crie uma tarefa para garantir que há uma tarefa com ID 1
+    client.post("/tasks/", json={"title": "Test Task", "description": "Test Description", "status": "Pendente"})
     response = client.delete("/tasks/1")
     assert response.status_code == 200
-    assert response.json() is None
+    # Verifique se a tarefa foi realmente excluída
+    response = client.get("/tasks/1")
+    assert response.status_code == 404
