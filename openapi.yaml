@@ -1,0 +1,144 @@
+openapi: 3.0.0
+info:
+  title: API para Gerenciamento de Tarefas
+  description: API para gerenciamento de tarefas que permite a criação, leitura, atualização e exclusão de tarefas. Cada tarefa deve ter um título, descrição, status e data de criação.  AUTORA - SHYRLES MONTEIRO - Big Data para Negócios - FATEC Ipiranga
+  version: 1.0.0
+
+servers:
+  - url: http://127.0.0.1:8000
+    description: Local server
+
+paths:
+  /tasks/:
+    post:
+      summary: Create a new task
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TaskCreate'
+      responses:
+        '200':
+          description: Task created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+    get:
+      summary: List all tasks
+      responses:
+        '200':
+          description: A list of tasks
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Task'
+
+  /tasks/{task_id}:
+    get:
+      summary: Get a task by ID
+      parameters:
+        - name: task_id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Task retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+        '404':
+          description: Task not found
+    put:
+      summary: Update a task
+      parameters:
+        - name: task_id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TaskUpdate'
+      responses:
+        '200':
+          description: Task updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+        '404':
+          description: Task not found
+    delete:
+      summary: Delete a task
+      parameters:
+        - name: task_id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Task deleted successfully
+          content:
+            application/json:
+              schema:
+                type: string
+                example: null
+        '404':
+          description: Task not found
+
+components:
+  schemas:
+    Task:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        title:
+          type: string
+          example: Task Title
+        description:
+          type: string
+          example: Task Description
+        status:
+          type: string
+          example: Pendente
+        created_at:
+          type: string
+          format: date-time
+          example: 2024-06-15T15:03:19.937731
+    TaskCreate:
+      type: object
+      properties:
+        title:
+          type: string
+          example: Task Title
+        description:
+          type: string
+          example: Task Description
+        status:
+          type: string
+          example: Pendente
+    TaskUpdate:
+      type: object
+      properties:
+        title:
+          type: string
+          example: Updated Task Title
+        description:
+          type: string
+          example: Updated Task Description
+        status:
+          type: string
+          example: Em Progresso

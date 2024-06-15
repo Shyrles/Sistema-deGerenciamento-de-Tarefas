@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81a68522-01cc-43d6-888e-f9d619fc7bbb" name="Changes" comment="banco SQLite funcionando, CRUD funcionando, faltando os testes">
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+    <list default="true" id="81a68522-01cc-43d6-888e-f9d619fc7bbb" name="Changes" comment="Classe de testes funcionando">
+      <change afterPath="$PROJECT_DIR$/openapi.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/repositories/task_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/repositories/task_repository.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new_test.db" beforeDir="false" afterPath="$PROJECT_DIR$/new_test.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_controllers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_controllers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_repositories.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_repositories.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_services.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,12 +125,29 @@
       <option name="project" value="LOCAL" />
       <updated>1718467640735</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Classe de testes funcionando">
+      <option name="closed" value="true" />
+      <created>1718469537473</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718469537473</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Classe de testes funcionando">
+      <option name="closed" value="true" />
+      <created>1718469585939</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718469585939</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="banco SQLite funcionando, CRUD funcionando, faltando os testes" />
-    <option name="LAST_COMMIT_MESSAGE" value="banco SQLite funcionando, CRUD funcionando, faltando os testes" />
+    <MESSAGE value="Classe de testes funcionando" />
+    <option name="LAST_COMMIT_MESSAGE" value="Classe de testes funcionando" />
   </component>
 </project>
